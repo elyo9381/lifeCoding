@@ -14,14 +14,24 @@ package com.company.OOP;
     커뮤니케이션을 원할하게 할때 인터페이스를 사용된다.
     인터페이스를 사용하게 되면 초기 어떤 함수 또는 어떤 변수를 쓸지 정할수있고
     각각의 개발자들은 이를 기반으로 구현을 진행할수있다.
+
+    * 인터페이스에 접근하는 접근지시자는 무조건 ! public 으로 지정해야한다.
+
+    * 인터페이스도 상속이 된다.
+
 */
 
-interface I{
+interface I1{
     public void z();
 }
 
-class AA implements I{
+interface I2{
+    public void x();
+}
+
+class AA implements I1,I2{
     public void z() {}
+    public void x() {}
 }
 
 public class Interface {
